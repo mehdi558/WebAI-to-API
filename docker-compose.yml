@@ -4,9 +4,10 @@
 
 services:
   web_ai:
-    build: .
-    image: cornatul/webai.ai
-    container_name: web_ai_server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: app-webai-to-api
     restart: always
     ports:
       - "6969:6969"
