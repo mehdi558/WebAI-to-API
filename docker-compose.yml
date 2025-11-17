@@ -10,7 +10,7 @@ services:
     container_name: app-webai-to-api
     restart: always
     volumes:
-      - ./config.conf:/app/config.conf:ro
+      - ./config.conf:/app/config.conf
     ports:
       - "6969:6969"
     env_file:
